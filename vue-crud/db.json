@@ -1,0 +1,28 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Angulars",
+      "description": "Superheroic JavaScript MVW",
+      "price": 300
+    },
+    {
+      "id": 2,
+      "name": "Laravel",
+      "description": "Framework",
+      "price": 300
+    },
+    {
+      "id": 3,
+      "name": "Vue",
+      "description": "Framework",
+      "price": 300
+    },
+    {
+      "id": 4,
+      "name": "Rails",
+      "description": "Framework",
+      "price": "1200"
+    }
+  ]
+}
