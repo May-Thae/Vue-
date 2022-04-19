@@ -43,7 +43,7 @@ export default {
     };
   },
   created() {
-    axios.get("http://localhost:8000/api/product").then((res) => {
+    axios.get(`${process.env.VUE_APP_BACKEND_URL}`).then((res) => {
       this.products = res.data;
     });
   },
@@ -63,7 +63,7 @@ export default {
       .then(value => {
         //if ok
         if(value == true) {
-          axios.delete(`http://localhost:8000/api/product/${id}`);
+          axios.delete(`${process.env.VUE_APP_BACKEND_URL}/${id}`);
           this.products = this.products.filter((product) => product.id !== id);
         }
       })

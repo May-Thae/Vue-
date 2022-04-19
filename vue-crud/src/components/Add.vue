@@ -47,6 +47,7 @@ export default {
         description: '',
         price: ''
       },
+      title: process.env.VUE_APP_BACKEND_URL,
       flag: false
     }
   },
@@ -59,7 +60,7 @@ export default {
         this.products.price
       ) {
         axios
-          .post('http://localhost:8000/api/product', {
+          .post(`${process.env.VUE_APP_BACKEND_URL}`, {
             id: this.products.id,
             name: this.products.name,
             description: this.products.description,
