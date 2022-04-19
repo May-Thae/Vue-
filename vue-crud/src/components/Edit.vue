@@ -36,7 +36,7 @@ export default {
   methods: {
     // get data
     getCusomterByID() {
-      axios.get(`http://localhost:3000/customers/${this.productId}`)
+      axios.get(`http://localhost:8000/api/product/${this.productId}`)
           .then((response) => {
             this.product = response.data;
           })
@@ -46,7 +46,7 @@ export default {
     },
     // update data
     updateCustomer() {
-      axios.put(`http://localhost:3000/customers/${this.productId}`,this.product)
+      axios.put(`http://localhost:8000/api/product/${this.productId}`,this.product)
           .then((response) => {
             console.log("update",response.data);
             this.$router.push(`/`)

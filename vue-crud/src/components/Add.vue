@@ -59,7 +59,7 @@ export default {
         this.products.price
       ) {
         axios
-          .post('http://localhost:3000/customers', {
+          .post('http://localhost:8000/api/product', {
             id: this.products.id,
             name: this.products.name,
             description: this.products.description,
