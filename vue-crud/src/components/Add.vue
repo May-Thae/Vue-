@@ -47,7 +47,6 @@ export default {
         description: '',
         price: ''
       },
-      title: process.env.VUE_APP_BACKEND_URL,
       flag: false
     }
   },
